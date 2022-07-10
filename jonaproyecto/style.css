@@ -1,0 +1,470 @@
+/*Fuentes
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Barlow', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Patrick Hand', cursive
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color :rgba(0,51,145,.95);
+    font-family:'Barlow', sans-serif;
+    background-image: url(./imagenes/atardecer_boca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+
+}
+
+/*CABECERA*/
+header{
+    display: flex;
+    height: 80px;
+    justify-content: none;
+    align-items: center;
+    padding-bottom: 0px;
+    background-color: rgba(2,35,109,.95);
+    
+}
+
+nav ul a {
+    text-decoration: none;
+    color: yellow;
+    margin-right: 4px;
+    padding: 3px;
+    
+}
+
+nav ul a:hover{
+    background-color: yellow;
+    padding: 4px; 
+    color: blue;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+
+
+
+
+.logo_jona img{
+    display: flex;
+    height: 75px;
+    
+}
+
+
+.Lista_menu {
+display: flex;
+list-style: none;
+
+}
+
+/*MAIN/*/
+.imagen_y_texto_hincha{
+    width: 80%;
+    max-width: 800px;
+    height: 600px;
+    margin-top: 5px;
+   
+    
+
+}
+
+.imagen_y_texto_hincha p{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: rgb(40, 40, 195);
+    width: fit-content;
+    font-family:'Patrick Hand', cursive;
+    font-size: 0.9em;
+    font-weight: 300;
+    word-spacing: 2px;
+   
+} 
+ 
+
+.imagen_y_texto_hincha img{
+    width: 90%;
+    margin-top: 0px;
+    float: left;
+    border-color:rgba(249, 232, 5, 0.95);
+    border-top: solid 1px yellow;
+    border-bottom: solid 1px yellow;
+    border-left: solid 2px yellow;
+    margin-right: 20px;
+}
+
+
+/*FOOTER MAIN*/
+footer{
+   
+    padding-top: 8px;
+    margin-bottom: 5px;
+    margin-top: 170px;
+    text-align: center;
+    background-color: rgba(2,35,109,.95);
+       
+}
+
+
+footer a{
+    color: yellow;
+    text-decoration:none;
+    margin-right: 10px;
+}
+
+
+.footer_registro{
+    color:grey;
+    text-align: right;
+}
+
+footer a:hover{
+    background-color: yellow;
+    border-radius: 12px;
+    color: rgba(5, 79, 240, 0.95);
+    font-weight: 550;
+    transition: 0.5s;
+
+}
+/*RESPONSIVE INDEX*/
+  
+ /*Tablet*/
+   @media(max-width:768px){
+    body{
+        background-image: url(./imagenes/bombonera_atardecer_tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;  
+    }
+
+
+    header{
+        height: 80px;    
+        background-color: midnightblue;
+        
+    }
+
+    .logo_jona img{
+        height: 70px; 
+    }
+
+    nav ul a {
+        font-family: 'Barlow', sans-serif;
+        font-size: 12px;
+        color: gold;
+        margin-right: 2px;
+        padding: 1px;
+        
+    }
+
+    .Lista_menu {
+        display: flex;
+        flex-wrap: wrap;                              
+        }
+
+        .imagen_y_texto_hincha p{
+            display: none;
+            } 
+
+            footer{
+                display: flex;
+                justify-content: center;   
+                padding-top: 2px;
+                margin-top: -49px;
+                background-color:midnightblue;   
+            }
+        
+            footer a{
+        
+                color: gold;
+                font-size: 10px;
+                text-decoration:none;
+                margin-right: 4px;
+            }
+        
+            footer a:hover{
+                background-color: gold;
+                color: blue;
+                font-weight: 200;
+                transition: 0.5s;
+            
+            }
+        
+            .footer_registro{
+                display: none;
+            }
+
+    
+}
+ /*Celular*/
+@media(max-width: 320px){
+
+    body{
+        background-image: url(./imagenes/bombonera_aerea.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+
+    header{
+        display: flex;
+        height: 60px;
+        justify-content: none;
+        align-items: left;
+        background-color: gold;
+        
+    }
+
+
+    .logo_jona img{
+        height: 60px; }
+    
+    nav ul a {
+        font-family: 'Patrick Hand', cursive;
+        font-size: 12px;
+        color: blue;
+        text-decoration: underline  blue;
+        margin-right: 2px;
+        padding: 1px;      
+    }
+
+    .Lista_menu {
+        display: flex;
+        flex-wrap: wrap;                              
+        }
+
+    nav ul a:hover{
+        background-color:blue;
+        padding: 3px;
+        color:yellow;
+        border-radius: 15px;
+        transition: 0.5s;}
+
+    .imagen_y_texto_hincha p{
+        display: none;
+        } 
+
+    footer{
+        display: flex;
+        justify-content: center;   
+        padding-top: 5px;
+        margin-top: -49px;
+        background-color: gold;   
+    }
+
+    footer a{
+
+        color:blue;
+        font-size: xx-small;
+        text-decoration:none;
+        margin-right: 2px;
+    }
+
+    footer a:hover{
+        background-color: blue;
+        color: yellow;
+        font-weight: 200;
+        transition: 0.5s;
+    
+    }
+
+    .footer_registro{
+        display: none;
+    }
+
+}
+
+  
+
+
+    
+
+
+
+
+
+
+
+/*BOCARTS GALERIA*/
+
+.body_galeria{
+    
+    font-family:'Barlow', sans-serif;
+    background-image: url(./imagenes/atardecer_boca.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+}
+
+.memes_bosterizados{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 0.4rem;
+    row-gap: 0.6rem;
+}
+.imagen{
+    width: 90%;
+    }
+
+.imagen img{
+    width: 90%;
+}
+
+/*RESPONSIVE BOCARTS*/
+/*TABLET*/
+
+@media(max-width: 768px){
+
+    .body_galeria{
+        background-image: url(../imagenes/9959.jpg);
+    }
+
+    .memes_bosterizados{
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width: 320px){
+
+    .memes_bosterizados{
+        grid-template-columns:repeat(1,1fr);
+
+    }
+}
+
+
+
+
+
+
+
+/*CONTACTO*/
+
+.Titulo_formulario{
+    padding: 5px;
+    border-radius: 6px;
+    color: yellow;
+    background-color:rgba(2,35,109,.95);
+    width: fit-content;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.formulario_cometarios{
+    color: yellow;
+    background-color: rgba(2,35,109,.95);
+    width: fit-content;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    width: fit-content;
+    
+
+
+}
+
+section form{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 600px;
+    height: 180px;
+}
+
+section form label{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+section form input{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+
+
+.footer_contacto{
+    padding-top: 20px;
+    margin-top: 430px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: rgba(2,35,109,.95);
+}
+
+/*Quienes somos*/
+
+.Titulos_quienes_somos{
+    color: yellow;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+.quienes_somos_contenido{
+    width: 100%;
+    max-width: 1500px;
+    margin-top: 265px;
+
+}
+
+.quienes_somos_contenido img{
+    width: 300px;
+    margin-top: 3px;
+    border-left: solid 3px yellow;
+    border-bottom: solid 3px yellow;
+    float: left;
+    margin-right: 20px;
+
+}
+.quienes_somos_contenido p{
+    margin-top: 14px;
+    color:antiquewhite;
+    background-color: rgba(2,35,109,.95);
+    border-bottom:solid 3px yellow;
+    border-right: solid 3px yellow;
+    border-top: solid 3px yellow;
+    font-family:'Patrick Hand', cursive;
+    font-size: large;
+    font-weight: 300;
+}
+
+.footer_quienes_somos{
+    padding-top: 20px;
+    margin-top: 290px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: rgba(2,35,109,.95);
+}
+
+/*Ubicacion*/
+
+.titulo_ubicacion{
+    color: yellow;
+}
+
+.video_bombonera{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: solid 3px yellow;
+    width: fit-content;
+}
+
+
+.footer_ubicacion{
+    padding-top: 20px;
+    margin-top: 160px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: rgba(2,35,109,.95);
+}
