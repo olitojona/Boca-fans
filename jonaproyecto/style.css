@@ -29,6 +29,9 @@ header{
     background-color: rgba(2,35,109,.95);
     
 }
+.contenedor_web{
+    display: flex;
+}
 
 nav ul a {
     text-decoration: none;
@@ -305,17 +308,11 @@ footer a:hover{
     width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     column-gap: 0.4rem;
     row-gap: 0.6rem;
 }
-.imagen{
-    width: 90%;
-    }
 
-.imagen img{
-    width: 90%;
-}
 
 /*RESPONSIVE BOCARTS*/
 /*TABLET*/
