@@ -307,11 +307,15 @@ footer a:hover{
 .memes_bosterizados{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 375px;
+    grid-template-rows: 250px;
     grid-gap:10px;
     padding: 20px;
     
 
+}
+
+.item_galeria{
+    position: relative;
 }
 
 .imagen_de_galeria{
@@ -322,30 +326,45 @@ footer a:hover{
 
 
 
+.titulo_imagen{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: gold;
+    background: linear-gradient(rgba(255,255,255,0), grey) 
+    
+}
+.titulo_imagen_blanco{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: midnightblue;
+    background: linear-gradient(rgba(255,255,255,0), grey)
+}
+
+
+
+
 /*RESPONSIVE BOCARTS*/
 /*TABLET*/
 
-@media(max-width: 768px){
 
-    .body_galeria{
-        background-image: url(../imagenes/9959.jpg);
-    }
-
+@media(max-width: 768px) {
     .memes_bosterizados{
-        grid-template-columns:repeat(2,1fr);
-
+        grid-template-columns: repeat(2, 1fr) ;
     }
-
-}
-
-@media(max-width: 320px){
-
-    .memes_bosterizados{
-        grid-template-columns:repeat(1,1fr);
-
+    
+    .titulo_imagen{
+        display: none;
     }
 }
 
+@media(max-width: 320px) {
+    .memes_bosterizados{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
 
 
 
