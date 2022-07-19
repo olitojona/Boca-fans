@@ -347,28 +347,6 @@ footer a:hover{
 /*TABLET*/
 
 
-@media(max-width: 768px) {
-    .memes_bosterizados{
-        grid-template-columns: repeat(2, 1fr) ;
-    }
-    
-    .titulo_imagen{
-        display: none;
-    }
-}
-
-@media(max-width: 320px) {
-    .memes_bosterizados{
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-}
-
-
-
-
-
-
 /*CONTACTO*/
 
 .Titulo_formulario{
